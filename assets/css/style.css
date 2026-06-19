@@ -1878,5 +1878,110 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+}
 
+ /* Mengatur wadah agar otomatis responsif */
+  .title-wrapper-flex {
+    display: flex;
+    flex-direction: row;     /* Susunan utama ke samping */
+    flex-wrap: wrap;         /* KUNCI: Akan otomatis turun ke bawah JIKA ruangnya tidak muat */
+    justify-content: flex-start; /* Rata kiri, sejajar dengan Nama */
+    align-items: center;
+    gap: 10px;               /* Jarak antar title */
+    margin-top: 8px;
+  }
+
+  /* Memastikan margin bawaan template tidak mengganggu susunan flex */
+  .title-wrapper-flex .title {
+    margin-bottom: 0;
+  }
+
+  /* --- Perbaikan Posisi Ikon Experiences agar di Tengah --- */
+  .service-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .service-icon-box {
+    margin: 0 auto 15px auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* --- Tampilan Button/Tag untuk Skills & Certifications --- */
+.skill-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+}
+
+.skill-tag-item {
+  background: var(--onyx);
+  color: var(--light-gray);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
+  cursor: default; /* Karena ini bukan link yang bisa diklik */
+}
+
+.skill-tag-item:hover {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+  border-color: var(--orange-yellow-crayola);
+}
+
+/* --- Contact Grid Layout (Sistem 3 di Atas, 2 di Tengah Bawah) --- */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Memastikan baris yang sisa 2 item berada di tengah */
+  gap: 25px;
+  padding: 0;
+}
+
+.contact-grid > li {
+  flex: 1 1 calc(33.333% - 25px); /* Membagi menjadi 3 kolom di layar lebar */
+  min-width: 240px; /* Jika layar HP sempit, otomatis turun jadi 1 baris */
+  max-width: 320px; /* Menjaga agar kotak tidak memanjang aneh */
+}
+
+/* Desain dalam kotak Contact */
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 30px 20px;
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  margin-bottom: 25px;
+  flex-grow: 1; /* Mendorong tombol selalu sejajar di bawah */
+  word-break: break-word;
+}
+
+.contact-btn {
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
 }
