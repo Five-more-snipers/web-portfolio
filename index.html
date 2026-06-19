@@ -31,7 +31,7 @@
       <div class="sidebar-info">
         <!-- Foto Profil -->
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Muhammad Raffi Hakim" width="80">
+          <img src="./assets/images/pasfotoSQR.jpg" alt="Muhammad Raffi Hakim" width="80">
         </figure>
 
         <!-- Informasi Nama dan Peran -->
@@ -127,26 +127,68 @@
       <!-- Navigasi Menu Atas -->
       <nav class="navbar">
         <ul class="navbar-list">
+          
           <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>Home</button>
           </li>
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>About</button>
+          </li>
+          
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
+          
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+
         </ul>
       </nav>
 
+      <!-- Halaman Utama (Home) -->
+      <article class="home active" data-page="home">
+        
+        <header>
+          <h2 class="h2 article-title">Home</h2>
+        </header>
+
+        <section class="home-text">
+          <h3 class="h3" style="margin-bottom: 15px; color: var(--white-2);">
+            Hello, I'm Muhammad Raffi Hakim
+          </h3>
+          
+          <p style="color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300); line-height: 1.6; margin-bottom: 25px;">
+            A prospective graduate and Full-Stack Developer specializing in the design and deployment of scalable enterprise solutions. Adept at translating complex business requirements into high-performance web applications and facilitating direct client collaboration to bridge the gap between technical execution and corporate strategy.
+          </p>
+
+          <!-- Grup Tombol -->
+          <div class="home-btn-group" style="display: flex; gap: 15px; flex-wrap: wrap;">
+            
+            <!-- Tombol Download CV -->
+            <a href="#" class="form-btn" style="margin: 0; width: max-content; padding: 12px 20px; border-radius: 12px; display: flex; align-items: center; gap: 8px;">
+              <ion-icon name="document-text-outline" style="font-size: 18px;"></ion-icon>
+              <span>Download CV</span>
+            </a>
+
+            <!-- Tombol Linktree -->
+            <a href="#" class="form-btn" style="margin: 0; width: max-content; padding: 12px 20px; border-radius: 12px; display: flex; align-items: center; gap: 8px;">
+              <ion-icon name="link-outline" style="font-size: 18px;"></ion-icon>
+              <span>Linktree</span>
+            </a>
+            
+          </div>
+        </section>
+
+      </article>
+
       <!-- Halaman 1: Tentang Saya (About) -->
-      <article class="about active" data-page="about">
+      <article class="about" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
@@ -515,10 +557,10 @@
 
       </article>
 
-      <!-- Halaman 3: Hasil Karya (Portfolio) -->
+      <!-- Halaman 3: Hasil Karya (Portfolio & Papers) -->
       <article class="portfolio" data-page="portfolio">
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Portfolio & Papers</h2>
         </header>
 
         <section class="projects">
@@ -528,13 +570,10 @@
               <button class="active" data-filter-btn>All</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Portfolio</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Papers</button>
             </li>
           </ul>
 
@@ -551,77 +590,141 @@
                 <button data-select-item>All</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Portfolio</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Papers</button>
               </li>
             </ul>
           </div>
 
-          <!-- Daftar Proyek Portofolio -->
+          <!-- Daftar Proyek Portofolio & Papers -->
           <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
+            
+            <!-- ================= PORTFOLIO (4 Items) ================= -->
+            
+            <!-- Portfolio 1: Online Warehouse System -->
+            <li class="project-item active" data-filter-item data-category="portfolio">
+              <a href="https://docs.google.com/presentation/d/1-vct_TmipbsPFNKFEo0avEfvjhoSVGFQ/edit?usp=sharing&ouid=106116808881047091820&rtpof=true&sd=true" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="link-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/erp.png" alt="Online Warehouse System" loading="lazy">
                 </figure>
-                <h3 class="project-title">Finance</h3>
-                <p class="project-category">Web development</p>
+                <h3 class="project-title">Online Warehouse System</h3>
+                <p class="project-category">Portfolio</p>
+                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
+                  Streamlined inventory framework utilizing Java Struts and MySQL to efficiently manage digital marketplace operations.
+                </p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
+            <!-- Portfolio 2: Smart Money Tracker -->
+            <li class="project-item active" data-filter-item data-category="portfolio">
+              <a href="https://drive.google.com/file/d/1w-UB5HfuhGSp0xj097GSzafjleg6Pa26/view?usp=sharing" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="link-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/moneytracker.png" alt="Smart Money Tracker" loading="lazy">
                 </figure>
-                <h3 class="project-title">Orizon</h3>
-                <p class="project-category">Web development</p>
+                <h3 class="project-title">AI Smart Money Tracker</h3>
+                <p class="project-category">Portfolio</p>
+                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
+                  Android mobile application integrated with Gemini API for intelligent photo scanning and automated expense tracking.
+                  Source Code will be distributed soon.
+                </p>
               </a>
             </li>
-            <!-- Tambahkan proyek lainnya di sini -->
-          </ul>
-        </section>
-      </article>
 
-      <!-- Halaman 4: Artikel / Blog -->
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-          <!-- Daftar Postingan Blog -->
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">Feb 23, 2022</time>
+            <!-- Portfolio 3: Mini-ERP -->
+            <li class="project-item active" data-filter-item data-category="portfolio">
+              <a href="https://github.com/Five-more-snipers/mini-erp" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
                   </div>
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-                </div>
+                  <img src="./assets/images/placeholderGithub.png" alt="Mini-ERP Portfolio" loading="lazy">
+                </figure>
+                <h3 class="project-title">Mini-ERP Implementation</h3>
+                <p class="project-category">Portfolio</p>
+                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
+                  Scalable enterprise resource planning module developed using modern tech stacks including Laravel, Vue.js, and PostgreSQL.
+                </p>
               </a>
             </li>
-            <!-- Tambahkan postingan blog lainnya di sini -->
+
+            <!-- Portfolio 4: Asset Lending Tracker -->
+            <li class="project-item active" data-filter-item data-category="portfolio">
+              <a href="https://github.com/Five-more-snipers/asset-management" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/asset.png" alt="Asset Lending Tracker" loading="lazy">
+                </figure>
+                <h3 class="project-title">Asset Lending Tracker & Manager</h3>
+                <p class="project-category">Portfolio</p>
+                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
+                  Full-stack management system built with Spring Boot, MySQL, Vue.js, and Bootstrap to efficiently track and manage organizational assets.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="portfolio">
+              <a href="https://drive.google.com/file/d/1eRnbNmCDdGR0HjDZ_NL-MS0YceT6rmbr/view?usp=sharing" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/stratosphere.png" alt="Asset Lending Tracker" loading="lazy">
+                </figure>
+                <h3 class="project-title">Fictitious World Flutter</h3>
+                <p class="project-category">Portfolio</p>
+                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
+                  Full-stack mobile application developed with Flutter and Supabase to create a simulated world and tracking fictional character, factions, and more.
+                  Source Code will be distributed soon
+                </p>
+              </a>
+            </li>
+
+            <!-- ================= PAPERS (2 Items) ================= -->
+
+            <!-- Paper 1: ICOBAR-SMART -->
+            <li class="project-item active" data-filter-item data-category="papers">
+              <a href="https://drive.google.com/drive/folders/18ZTD52txDAbKX62zXsYq5yBiqyhwxJRM?usp=sharing" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/icobar.png" alt="ICOBAR-SMART Paper" loading="lazy">
+                </figure>
+                <h3 class="project-title">Lightweight License Plate Detection</h3>
+                <p class="project-category">Papers</p>
+                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
+                  Research on generative data augmentation presented at the ICOBAR 2026 conference and accepted for ICOBAR-SMART 2026.
+                </p>
+              </a>
+            </li>
+
+            <!-- Paper 2: Thesis -->
+            <li class="project-item active" data-filter-item data-category="papers">
+              <a href="https://drive.google.com/file/d/1U_zWw4uOgG36VZFr1I3AriIv_yKrzL9q/view?usp=sharing" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/thesis.png" alt="ANPR Proposed Model" loading="lazy">
+                </figure>
+                <h3 class="project-title">ANPR via Coordinate Attention</h3>
+                <p class="project-category">Papers</p>
+                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
+                  Undergraduate thesis research utilizing the Proposed Model on the License Plate Dataset to optimize automatic number plate recognition.
+                </p>
+              </a>
+            </li>
+
           </ul>
         </section>
       </article>
