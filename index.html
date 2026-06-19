@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Informasi Dasar dan Meta Data -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
-
-  <!-- Ikon Website -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!-- Tautan ke File CSS Eksternal -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- Font dari Google (Poppins) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- Pembungkus Seluruh Konten Halaman -->
   <main>
 
-    <!-- Sidebar: Menampilkan Foto Profil, Nama, Jabatan, dan Informasi Kontak -->
     <aside class="sidebar" data-sidebar>
-
       <div class="sidebar-info">
-        <!-- Foto Profil -->
         <figure class="avatar-box">
           <img src="./assets/images/pasfotoSQR.jpg" alt="Muhammad Raffi Hakim" width="80">
         </figure>
-
-        <!-- Informasi Nama dan Peran -->
         <div class="info-content">
           <h1 class="name" title="Muhammad Raffi Hakim">Muhammad Raffi Hakim</h1>
-          
-          <!-- Bungkus title di dalam container baru -->
           <div class="title-wrapper-flex">
             <p class="title">IT Consultant</p>
           </div>
         </div>
-
-        <!-- Tombol untuk Menampilkan Kontak (Versi Mobile) -->
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
@@ -53,8 +33,6 @@
 
       <div class="sidebar-info_more">
         <div class="separator"></div>
-
-        <!-- Daftar Informasi Kontak Detail -->
         <ul class="contacts-list">
           <li class="contact-item">
             <div class="icon-box">
@@ -65,7 +43,6 @@
               <a href="mailto:heckyeah2005@gmail.com" class="contact-link">heckyeah2005@gmail.com</a>
             </div>
           </li>
-
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -75,7 +52,6 @@
               <a href="tel:+6282124472332" class="contact-link">+62 821-2447-2332</a>
             </div>
           </li>
-
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -85,7 +61,6 @@
               <time datetime="2003-10-03">October 03, 2003</time>
             </div>
           </li>
-
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
@@ -96,99 +71,60 @@
             </div>
           </li>
         </ul>
-
         <div class="separator"></div>
-
-        <!-- Daftar Tautan Media Sosial -->
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://github.com/Five-more-snipers" class="social-link">
+            <a href="https://github.com/Five-more-snipers" class="social-link" target="_blank">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/muhammad-hakim-ba443b1a0/" class="social-link">
+            <a href="https://www.linkedin.com/in/muhammad-hakim-ba443b1a0/" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
         </ul>
       </div>
-
     </aside>
 
-    <!-- Konten Utama: Berisi Menu Navigasi dan Halaman-Halaman -->
     <div class="main-content">
 
-      <!-- Navigasi Menu Atas -->
       <nav class="navbar">
         <ul class="navbar-list">
-          
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>Home</button>
-          </li>
-          
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>About</button>
-          </li>
-          
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>Home</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
       </nav>
 
-      <!-- Halaman Utama (Home) -->
       <article class="home active" data-page="home">
-        
         <header>
           <h2 class="h2 article-title">Home</h2>
         </header>
-
         <section class="home-text">
-          <h3 class="h3" style="margin-bottom: 15px; color: var(--white-2);">
-            Hello, I'm Muhammad Raffi Hakim
-          </h3>
-          
-          <p style="color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300); line-height: 1.6; margin-bottom: 25px;">
+          <h3 class="h3 home-greeting">Introduction</h3>
+          <p class="home-desc">
             A prospective graduate and Full-Stack Developer specializing in the design and deployment of scalable enterprise solutions. Adept at translating complex business requirements into high-performance web applications and facilitating direct client collaboration to bridge the gap between technical execution and corporate strategy.
           </p>
-
-          <!-- Grup Tombol -->
-          <div class="home-btn-group" style="display: flex; gap: 15px; flex-wrap: wrap;">
-            
-            <!-- Tombol Download CV -->
-            <a href="https://drive.google.com/file/d/1qDlKTo7wMgVWwhuPllBXfSExLykeF2Gc/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 12px 20px; border-radius: 12px; display: flex; align-items: center; gap: 8px;">
-              <ion-icon name="document-text-outline" style="font-size: 18px;"></ion-icon>
+          <div class="btn-group">
+            <a href="https://drive.google.com/file/d/1qDlKTo7wMgVWwhuPllBXfSExLykeF2Gc/view?usp=sharing" class="form-btn action-btn large" target="_blank">
+              <ion-icon name="document-text-outline"></ion-icon>
               <span>Download CV</span>
             </a>
-
-            <!-- Tombol Linktree -->
-            <a href="https://linktr.ee/heckyeah2005" class="form-btn" style="margin: 0; width: max-content; padding: 12px 20px; border-radius: 12px; display: flex; align-items: center; gap: 8px;">
-              <ion-icon name="link-outline" style="font-size: 18px;"></ion-icon>
+            <a href="https://linktr.ee/heckyeah2005" class="form-btn action-btn large" target="_blank">
+              <ion-icon name="link-outline"></ion-icon>
               <span>Linktree</span>
             </a>
-            
           </div>
         </section>
-
       </article>
 
-      <!-- Halaman 1: Tentang Saya (About) -->
       <article class="about" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
-
-        <!-- Deskripsi Singkat Tentang Anda -->
         <section class="about-text">
           <p>
             A capable Full-Stack Developer and IT Consultant specializing in building robust web applications and managing complex Enterprise Resource Planning (ERP) projects. Core capabilities include translating intricate business requirements into scalable software solutions and restructuring database architectures to maximize operational efficiency. This developer leverages a comprehensive technical stack that includes Java Spring Boot, Apache Struts, Laravel, Vue.js, and modern cloud computing environments.
@@ -197,175 +133,99 @@
             Academic foundations were established through an advanced Master's track in Computer Science at Bina Nusantara University. Professionally, this expertise was applied during a tenure as an IT Consultant at PT Inkombizz, engineering scalable ERP systems and successfully resolving over 300 critical bugs across multiple client deployments. This role also involved direct client collaboration and conducting month-long technical training sessions to ensure seamless software adoption.
           </p>
         </section>
-
-        <!-- Layanan yang Ditawarkan -->
         <section class="service">
           <h3 class="h3 service-title">Experiences</h3>
-          
           <ul class="service-list">
-            
-            <!-- IT Consultant -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="briefcase-outline" style="font-size: 40px; color: #ffdb70;"></ion-icon>
+                <ion-icon name="briefcase-outline"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">IT Consultant</h4>
-                <p class="service-item-text">
-                  Strategic tech solutions and client training derived from professional internships and self-directed enterprise projects.
-                </p>
+                <p class="service-item-text">Strategic tech solutions and client training derived from professional internships and self-directed enterprise projects.</p>
               </div>
             </li>
-
-            <!-- Full-Stack Web Dev -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="code-slash-outline" style="font-size: 40px; color: #ffdb70;"></ion-icon>
+                <ion-icon name="code-slash-outline"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Full-Stack Web Dev</h4>
-                <p class="service-item-text">
-                  End-to-end web system development built upon hands-on experience from corporate internships and self-initiated projects.
-                </p>
+                <p class="service-item-text">End-to-end web system development built upon hands-on experience from corporate internships and self-initiated projects.</p>
               </div>
             </li>
-
-            <!-- Android Developer -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="logo-android" style="font-size: 40px; color: #ffdb70;"></ion-icon>
+                <ion-icon name="logo-android"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Android Developer</h4>
-                <p class="service-item-text">
-                  Mobile app creation honed via self-projects, notably designing a smart money tracker with an AI photo scanner.
-                </p>
+                <p class="service-item-text">Mobile app creation honed via self-projects, notably designing a smart money tracker with an AI photo scanner.</p>
               </div>
             </li>
-
-            <!-- SQL Developer -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="server-outline" style="font-size: 40px; color: #ffdb70;"></ion-icon>
+                <ion-icon name="server-outline"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">SQL Developer</h4>
-                <p class="service-item-text">
-                  Database optimization and complex query management gained through rigorous corporate internships and comprehensive personal projects.
-                </p>
+                <p class="service-item-text">Database optimization and complex query management gained through rigorous corporate internships and comprehensive personal projects.</p>
               </div>
             </li>
-
           </ul>
         </section>
-
-        <!-- Jendela Pop-up untuk Testimoni (Modal) -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">14 June, 2021</time>
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience and is very concerned about the needs of client.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
       </article>
 
-      <!-- Halaman 2: Riwayat Pendidikan dan Pekerjaan (Resume) -->
       <article class="resume" data-page="resume">
-        
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
-
-        <!-- Tombol Download CV -->
-        <div class="download-cv-wrapper" style="margin-bottom: 30px; display: flex; justify-content: flex-start;">
-          <!-- Ditambahkan margin: 0; untuk membatalkan dorongan ke kanan -->
-          <a href="https://drive.google.com/file/d/1qDlKTo7wMgVWwhuPllBXfSExLykeF2Gc/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 12px 20px; border-radius: 12px; display: flex; align-items: center; gap: 8px;">
-            <ion-icon name="download-outline" style="font-size: 18px;"></ion-icon>
+        <div class="btn-group" style="margin-bottom: 30px;">
+          <a href="https://drive.google.com/file/d/1qDlKTo7wMgVWwhuPllBXfSExLykeF2Gc/view?usp=sharing" class="form-btn action-btn large" target="_blank">
+            <ion-icon name="download-outline"></ion-icon>
             <span>Download CV</span>
           </a>
         </div>
-
-        <!-- Bagian Pendidikan -->
         <section class="timeline">
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
             <h3 class="h3">Education</h3>
           </div>
           <ol class="timeline-list">
-            
-            <!-- Pendidikan Master (S2) -->
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Master at Computer Science</h4>
               <span>Bina Nusantara University | Sep 2024 — Aug 2026</span>
-              <p class="timeline-text">
-                Current GPA: 3.93/4.00.
-              </p>
-              <!-- Tombol Dokumen Pendukung -->
-              <div class="education-docs" style="display: flex; gap: 12px; margin-top: 15px; flex-wrap: wrap; justify-content: flex-start;">
-                <!-- Ditambahkan margin: 0; di sini juga -->
-                <a href="https://drive.google.com/file/d/1fO4miZGFI1gpOAE6McRLbBE_M2eMu_6d/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Score Transcript</span>
+              <p class="timeline-text">Current GPA: 3.93/4.00.</p>
+              <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1fO4miZGFI1gpOAE6McRLbBE_M2eMu_6d/view?usp=sharing" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="document-text-outline"></ion-icon><span>Score Transcript</span>
                 </a>
-                <a href="https://drive.google.com/file/d/1Hh28XLK7FJMxT4de3agic4BjrBSFyqUH/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="ribbon-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Graduation Certificate</span>
+                <a href="https://drive.google.com/file/d/1Hh28XLK7FJMxT4de3agic4BjrBSFyqUH/view?usp=sharing" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="ribbon-outline"></ion-icon><span>Graduation Certificate</span>
                 </a>
               </div>
             </li>
-
-            <!-- Pendidikan Bachelor (S1) -->
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Bachelor at Computer Science</h4>
               <span>Bina Nusantara University | Aug 2021 — Aug 2024</span>
-              <p class="timeline-text">
-                Current GPA: 3.80/4.00.
-              </p>
-              <!-- Tombol Dokumen Pendukung -->
-              <div class="education-docs" style="display: flex; gap: 12px; margin-top: 15px; flex-wrap: wrap; justify-content: flex-start;">
-                <a href="https://drive.google.com/file/d/1slav-BmXw6s2QlKdLpKYYdnnlCIbl6XL/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Score Transcript</span>
+              <p class="timeline-text">Current GPA: 3.80/4.00.</p>
+              <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1slav-BmXw6s2QlKdLpKYYdnnlCIbl6XL/view?usp=sharing" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="document-text-outline"></ion-icon><span>Score Transcript</span>
                 </a>
-                <a href="https://drive.google.com/file/d/1LdtqUHR7GZ5tJOywcP4F48DeNNF8Sr1N/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="ribbon-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Graduation Certificate</span>
+                <a href="https://drive.google.com/file/d/1LdtqUHR7GZ5tJOywcP4F48DeNNF8Sr1N/view?usp=sharing" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="ribbon-outline"></ion-icon><span>Graduation Certificate</span>
                 </a>
               </div>
             </li>
-
           </ol>
         </section>
-
-        <!-- Bagian Pengalaman Kerja & Organisasi -->
         <section class="timeline">
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
             <h3 class="h3">Experience & Organization</h3>
           </div>
           <ol class="timeline-list">
-            
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">IT Consultant — PT Inkombizz</h4>
               <span>Jan 2024 — May 2026</span>
@@ -374,7 +234,6 @@
                 • Restructured complex MySQL logic to reduce query times by ~10% and conducted month-long client training.
               </p>
             </li>
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Activist — Himpunan Mahasiswa Teknik Informatika</h4>
               <span>Bina Nusantara University | Aug 2022 — Jul 2023</span>
@@ -383,7 +242,6 @@
                 • Mentored junior computer science students in preparation for their university exams.
               </p>
             </li>
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Member — Bina Nusantara Computer Club</h4>
               <span>Bina Nusantara University | Oct 2021 — Jul 2022</span>
@@ -392,16 +250,11 @@
                 • Applied backend concepts by building a functional CRUD system using Laravel.
               </p>
             </li>
-
           </ol>
         </section>
-
-        <!-- Frameworks & Libraries -->
-        <section class="skill" style="margin-bottom: 30px;">
+        <section class="skill section-mb">
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="cube-outline"></ion-icon>
-            </div>
+            <div class="icon-box"><ion-icon name="cube-outline"></ion-icon></div>
             <h3 class="h3">Frameworks, Libraries & APIs</h3>
           </div>
           <div class="content-card">
@@ -416,13 +269,9 @@
             </ul>
           </div>
         </section>
-
-        <!-- Programming Languages -->
-        <section class="skill" style="margin-bottom: 30px;">
+        <section class="skill section-mb">
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="terminal-outline"></ion-icon>
-            </div>
+            <div class="icon-box"><ion-icon name="terminal-outline"></ion-icon></div>
             <h3 class="h3">Programming Languages</h3>
           </div>
           <div class="content-card">
@@ -436,13 +285,9 @@
             </ul>
           </div>
         </section>
-
-        <!-- Database & Cloud -->
-        <section class="skill" style="margin-bottom: 30px;">
+        <section class="skill section-mb">
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="server-outline"></ion-icon>
-            </div>
+            <div class="icon-box"><ion-icon name="server-outline"></ion-icon></div>
             <h3 class="h3">Database & Cloud</h3>
           </div>
           <div class="content-card">
@@ -455,13 +300,9 @@
             </ul>
           </div>
         </section>
-
-        <!-- Development Tools & Environments -->
-        <section class="skill" style="margin-bottom: 40px;">
+        <section class="skill section-mb-large">
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="build-outline"></ion-icon>
-            </div>
+            <div class="icon-box"><ion-icon name="build-outline"></ion-icon></div>
             <h3 class="h3">Development Tools & Environments</h3>
           </div>
           <div class="content-card">
@@ -476,340 +317,225 @@
             </ul>
           </div>
         </section>
-
-
-        <!-- ================= BAGIAN CERTIFICATIONS ================= -->
-        
-        <section class="skill" style="margin-bottom: 30px;">
-          <div class="title-wrapper" style="margin-bottom: 20px;">
-            <div class="icon-box">
-              <ion-icon name="ribbon-outline"></ion-icon>
-            </div>
+        <section class="skill section-mb">
+          <div class="title-wrapper section-mb-small">
+            <div class="icon-box"><ion-icon name="ribbon-outline"></ion-icon></div>
             <h3 class="h3">Licenses & Certifications</h3>
           </div>
-          
-          <!-- Grid/Daftar Box Individual untuk Sertifikasi -->
-          <ul class="cert-list" style="display: grid; gap: 20px; padding: 0;">
-            
-            <!-- Box Sertifikat 1 -->
+          <ul class="cert-list">
             <li>
-              <div class="content-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; padding: 20px; padding-top: 20px;">
+              <div class="content-card cert-card">
                 <div class="cert-info">
-                  <h4 class="h4" style="margin-bottom: 5px; text-transform: none;">Machine Learning Operations - Dicoding</h4>
-                  <p style="color: var(--orange-yellow-crayola); font-size: var(--fs-6);">July 2025 – July 2028</p>
+                  <h4 class="h4 cert-title">Machine Learning Operations - Dicoding</h4>
+                  <p class="cert-date">July 2025 – July 2028</p>
                 </div>
-                <a href="https://drive.google.com/file/d/10AP_etJ6GLu8iRpNlJJ__-fiyeTwL50I/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="open-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Show Credential</span>
+                <a href="https://drive.google.com/file/d/10AP_etJ6GLu8iRpNlJJ__-fiyeTwL50I/view?usp=sharing" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon><span>Show Credential</span>
                 </a>
               </div>
             </li>
-
-            <!-- Box Sertifikat 2 -->
             <li>
-              <div class="content-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; padding: 20px; padding-top: 20px;">
+              <div class="content-card cert-card">
                 <div class="cert-info">
-                  <h4 class="h4" style="margin-bottom: 5px; text-transform: none;">Machine Learning Terapan</h4>
-                  <p style="color: var(--orange-yellow-crayola); font-size: var(--fs-6);">May 2025 – May 2028</p>
+                  <h4 class="h4 cert-title">Machine Learning Terapan</h4>
+                  <p class="cert-date">May 2025 – May 2028</p>
                 </div>
-                <a href="https://drive.google.com/file/d/1VRh_ilWpIvZllRjyByLrqS9DNnjp0bf0/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="open-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Show Credential</span>
+                <a href="https://drive.google.com/file/d/1VRh_ilWpIvZllRjyByLrqS9DNnjp0bf0/view?usp=sharing" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon><span>Show Credential</span>
                 </a>
               </div>
             </li>
-
-            <!-- Box Sertifikat 3 -->
             <li>
-              <div class="content-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; padding: 20px; padding-top: 20px;">
+              <div class="content-card cert-card">
                 <div class="cert-info">
-                  <h4 class="h4" style="margin-bottom: 5px; text-transform: none;">AWS Cloud Foundation Graduate</h4>
-                  <p style="color: var(--orange-yellow-crayola); font-size: var(--fs-6);">Obtained September 2024</p>
+                  <h4 class="h4 cert-title">AWS Cloud Foundation Graduate</h4>
+                  <p class="cert-date">Obtained September 2024</p>
                 </div>
-                <a href="https://www.credly.com/badges/831d9b45-4685-4208-9c11-83f03f8e88aa/public_url" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="open-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Show Credential</span>
+                <a href="https://www.credly.com/badges/831d9b45-4685-4208-9c11-83f03f8e88aa/public_url" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon><span>Show Credential</span>
                 </a>
               </div>
             </li>
-
-            <!-- Box Sertifikat 4 -->
             <li>
-              <div class="content-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; padding: 20px; padding-top: 20px;">
+              <div class="content-card cert-card">
                 <div class="cert-info">
-                  <h4 class="h4" style="margin-bottom: 5px; text-transform: none;">TOEFL ITP (Score: 617) - ETS / ILP Cikini</h4>
-                  <p style="color: var(--orange-yellow-crayola); font-size: var(--fs-6);">April 2026 - April 2028</p>
+                  <h4 class="h4 cert-title">TOEFL ITP (Score: 617) - ETS / ILP Cikini</h4>
+                  <p class="cert-date">April 2026 - April 2028</p>
                 </div>
-                <a href="https://drive.google.com/file/d/1VlPTQDL5qWheAApkL2viXTGc8N9jk83l/view?usp=sharing" class="form-btn" style="margin: 0; width: max-content; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px;">
-                  <ion-icon name="open-outline" style="font-size: 16px;"></ion-icon>
-                  <span>Show Credential</span>
+                <a href="https://drive.google.com/file/d/1VlPTQDL5qWheAApkL2viXTGc8N9jk83l/view?usp=sharing" class="form-btn action-btn" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon><span>Show Credential</span>
                 </a>
               </div>
             </li>
-
           </ul>
         </section>
-
       </article>
 
-      <!-- Halaman 3: Hasil Karya (Portfolio & Papers) -->
       <article class="portfolio" data-page="portfolio">
         <header>
           <h2 class="h2 article-title">Portfolio & Papers</h2>
         </header>
-
         <section class="projects">
           <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Portfolio</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Papers</button>
-            </li>
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Portfolio</button></li>
+            <li class="filter-item"><button data-filter-btn>Papers</button></li>
           </ul>
-
           <div class="filter-select-box">
             <button class="filter-select" data-select>
               <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
             </button>
             <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Portfolio</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Papers</button>
-              </li>
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Portfolio</button></li>
+              <li class="select-item"><button data-select-item>Papers</button></li>
             </ul>
           </div>
-
           <ul class="project-list">
-            
             <li class="project-item active" data-filter-item data-category="portfolio">
               <a href="https://docs.google.com/presentation/d/1-vct_TmipbsPFNKFEo0avEfvjhoSVGFQ/edit?usp=sharing&ouid=106116808881047091820&rtpof=true&sd=true" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="link-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/erp.png" alt="Online Warehouse System" loading="lazy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                  <div class="project-item-icon-box"><ion-icon name="link-outline"></ion-icon></div>
+                  <img src="./assets/images/erp.png" alt="Online Warehouse System" loading="lazy">
                 </figure>
                 <h3 class="project-title">Online Warehouse System</h3>
                 <p class="project-category">Portfolio</p>
-                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
-                  Streamlined inventory framework utilizing Java Struts and MySQL to efficiently manage digital marketplace operations.
-                </p>
+                <p class="project-description">Streamlined inventory framework utilizing Java Struts and MySQL to efficiently manage digital marketplace operations.</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="portfolio">
               <a href="https://drive.google.com/file/d/1w-UB5HfuhGSp0xj097GSzafjleg6Pa26/view?usp=sharing" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="link-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/moneytracker.png" alt="Smart Money Tracker" loading="lazy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                  <div class="project-item-icon-box"><ion-icon name="link-outline"></ion-icon></div>
+                  <img src="./assets/images/moneytracker.png" alt="Smart Money Tracker" loading="lazy">
                 </figure>
                 <h3 class="project-title">AI Smart Money Tracker</h3>
                 <p class="project-category">Portfolio</p>
-                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
-                  Android mobile application integrated with Gemini API for intelligent photo scanning and automated expense tracking. Source Code will be distributed soon.
-                </p>
+                <p class="project-description">Android mobile application integrated with Gemini API for intelligent photo scanning and automated expense tracking. Source Code will be distributed soon.</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="portfolio">
               <a href="https://github.com/Five-more-snipers/mini-erp" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="link-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/placeholderGithub.png" alt="Mini-ERP Portfolio" loading="lazy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                  <div class="project-item-icon-box"><ion-icon name="link-outline"></ion-icon></div>
+                  <img src="./assets/images/placeholderGithub.png" alt="Mini-ERP Portfolio" loading="lazy">
                 </figure>
                 <h3 class="project-title">Mini-ERP Implementation</h3>
                 <p class="project-category">Portfolio</p>
-                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
-                  Scalable enterprise resource planning module developed using modern tech stacks including Laravel, Vue.js, and PostgreSQL.
-                </p>
+                <p class="project-description">Scalable enterprise resource planning module developed using modern tech stacks including Laravel, Vue.js, and PostgreSQL.</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="portfolio">
               <a href="https://github.com/Five-more-snipers/asset-management" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="link-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/asset.png" alt="Asset Lending Tracker" loading="lazy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                  <div class="project-item-icon-box"><ion-icon name="link-outline"></ion-icon></div>
+                  <img src="./assets/images/asset.png" alt="Asset Lending Tracker" loading="lazy">
                 </figure>
                 <h3 class="project-title">Asset Lending Tracker & Manager</h3>
                 <p class="project-category">Portfolio</p>
-                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
-                  Full-stack management system built with Spring Boot, MySQL, Vue.js, and Bootstrap to efficiently track and manage organizational assets.
-                </p>
+                <p class="project-description">Full-stack management system built with Spring Boot, MySQL, Vue.js, and Bootstrap to efficiently track and manage organizational assets.</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="portfolio">
               <a href="https://drive.google.com/file/d/1eRnbNmCDdGR0HjDZ_NL-MS0YceT6rmbr/view?usp=sharing" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="link-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/stratosphere.png" alt="Fictitious World Flutter" loading="lazy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                  <div class="project-item-icon-box"><ion-icon name="link-outline"></ion-icon></div>
+                  <img src="./assets/images/stratosphere.png" alt="Fictitious World Flutter" loading="lazy">
                 </figure>
                 <h3 class="project-title">Fictitious World Flutter</h3>
                 <p class="project-category">Portfolio</p>
-                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
-                  Full-stack mobile application developed with Flutter and Supabase to create a simulated world and tracking fictional characters, factions, and more. Source Code will be distributed soon.
-                </p>
+                <p class="project-description">Full-stack mobile application developed with Flutter and Supabase to create a simulated world and tracking fictional characters, factions, and more. Source Code will be distributed soon.</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="papers">
               <a href="https://drive.google.com/drive/folders/18ZTD52txDAbKX62zXsYq5yBiqyhwxJRM?usp=sharing" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="document-text-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/icobar.png" alt="ICOBAR-SMART Paper" loading="lazy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                  <div class="project-item-icon-box"><ion-icon name="document-text-outline"></ion-icon></div>
+                  <img src="./assets/images/icobar.png" alt="ICOBAR-SMART Paper" loading="lazy">
                 </figure>
                 <h3 class="project-title">Lightweight License Plate Detection</h3>
                 <p class="project-category">Papers</p>
-                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
-                  Research on generative data augmentation presented at the ICOBAR 2026 conference and accepted for ICOBAR-SMART 2026.
-                </p>
+                <p class="project-description">Research on generative data augmentation presented at the ICOBAR 2026 conference and accepted for ICOBAR-SMART 2026.</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="papers">
               <a href="https://drive.google.com/file/d/1U_zWw4uOgG36VZFr1I3AriIv_yKrzL9q/view?usp=sharing" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="document-text-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/thesis.png" alt="ANPR Proposed Model" loading="lazy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                  <div class="project-item-icon-box"><ion-icon name="document-text-outline"></ion-icon></div>
+                  <img src="./assets/images/thesis.png" alt="ANPR Proposed Model" loading="lazy">
                 </figure>
                 <h3 class="project-title">ANPR via Coordinate Attention</h3>
                 <p class="project-category">Papers</p>
-                <p class="project-description" style="color: var(--light-gray); font-size: 14px; margin-top: 10px; margin-left: 10px; line-height: 1.5;">
-                  Undergraduate thesis research utilizing the Proposed Model on the Siddragha Dataset to optimize automatic number plate recognition.
-                </p>
+                <p class="project-description">Undergraduate thesis research utilizing the Proposed Model on the Siddragha Dataset to optimize automatic number plate recognition.</p>
               </a>
             </li>
-
           </ul>
         </section>
       </article>
 
-      <!-- Halaman 5: Hubungi Saya (Contact) -->
       <article class="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
         <section class="contact-info-section">
-          <h3 class="h3 form-title" style="margin-bottom: 25px;">Let's Connect</h3>
-          
+          <h3 class="h3 form-title section-mb">Social Media Account</h3>
           <ul class="contact-grid">
-            
-            <!-- Box 1: GitHub -->
             <li>
               <div class="content-card contact-box">
-                <div class="icon-box contact-icon">
-                  <ion-icon name="logo-github"></ion-icon>
-                </div>
-                <h4 class="h4" style="text-transform: none; margin-bottom: 5px;">GitHub</h4>
+                <div class="icon-box contact-icon"><ion-icon name="logo-github"></ion-icon></div>
+                <h4 class="h4 contact-box-title">GitHub</h4>
                 <p class="contact-text">heckyeah2005</p>
-                <!-- Placeholder Button -->
-                <a href="https://github.com/Five-more-snipers" class="form-btn contact-btn">
-                  <ion-icon name="open-outline"></ion-icon>
-                  <span>Visit GitHub</span>
+                <a href="https://github.com/Five-more-snipers" class="form-btn contact-btn" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon><span>Visit GitHub</span>
                 </a>
               </div>
             </li>
-
-            <!-- Box 2: LinkedIn -->
             <li>
               <div class="content-card contact-box">
-                <div class="icon-box contact-icon">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </div>
-                <h4 class="h4" style="text-transform: none; margin-bottom: 5px;">LinkedIn</h4>
+                <div class="icon-box contact-icon"><ion-icon name="logo-linkedin"></ion-icon></div>
+                <h4 class="h4 contact-box-title">LinkedIn</h4>
                 <p class="contact-text">Muhammad Raffi Hakim</p>
-                <!-- Placeholder Button -->
-                <a href="https://www.linkedin.com/in/muhammad-hakim-ba443b1a0/" class="form-btn contact-btn">
-                  <ion-icon name="open-outline"></ion-icon>
-                  <span>Connect</span>
+                <a href="https://www.linkedin.com/in/muhammad-hakim-ba443b1a0/" class="form-btn contact-btn" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon><span>Connect</span>
                 </a>
               </div>
             </li>
-
-            <!-- Box 3: Email -->
             <li>
               <div class="content-card contact-box">
-                <div class="icon-box contact-icon">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </div>
-                <h4 class="h4" style="text-transform: none; margin-bottom: 5px;">Email</h4>
+                <div class="icon-box contact-icon"><ion-icon name="mail-outline"></ion-icon></div>
+                <h4 class="h4 contact-box-title">Email</h4>
                 <p class="contact-text">heckyeah2005@gmail.com</p>
-                <!-- Placeholder Button -->
                 <a href="mailto:heckyeah2005@gmail.com" class="form-btn contact-btn">
-                  <ion-icon name="paper-plane-outline"></ion-icon>
-                  <span>Send Email</span>
+                  <ion-icon name="paper-plane-outline"></ion-icon><span>Send Email</span>
                 </a>
               </div>
             </li>
-
-            <!-- Box 4: Linktree -->
             <li>
               <div class="content-card contact-box">
-                <div class="icon-box contact-icon">
-                  <ion-icon name="link-outline"></ion-icon>
-                </div>
-                <h4 class="h4" style="text-transform: none; margin-bottom: 5px;">Linktree</h4>
+                <div class="icon-box contact-icon"><ion-icon name="link-outline"></ion-icon></div>
+                <h4 class="h4 contact-box-title">Linktree</h4>
                 <p class="contact-text">@heckyeah2005</p>
-                <!-- Placeholder Button -->
-                <a href="https://linktr.ee/heckyeah2005" class="form-btn contact-btn">
-                  <ion-icon name="open-outline"></ion-icon>
-                  <span>Open Linktree</span>
+                <a href="https://linktr.ee/heckyeah2005" class="form-btn contact-btn" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon><span>Open Linktree</span>
                 </a>
               </div>
             </li>
-
-            <!-- Box 5: WhatsApp -->
             <li>
               <div class="content-card contact-box">
-                <div class="icon-box contact-icon">
-                  <ion-icon name="logo-whatsapp"></ion-icon>
-                </div>
-                <h4 class="h4" style="text-transform: none; margin-bottom: 5px;">WhatsApp</h4>
+                <div class="icon-box contact-icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                <h4 class="h4 contact-box-title">WhatsApp</h4>
                 <p class="contact-text">+62 821-2447-2332</p>
-
               </div>
             </li>
-
           </ul>
         </section>
       </article>
 
     </div>
   </main>
-
-  <!-- Skrip JavaScript Khusus untuk Halaman Ini -->
   <script src="./assets/js/script.js"></script>
-
-  <!-- Skrip untuk Memuat Ikon dari Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
